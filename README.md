@@ -46,6 +46,27 @@ This project involves **analyzing 311 Call Center Service Requests** in **Kansas
 
 ---
 
+## Dataset Overview
+
+**Dataset:** `311_CallCenterServiceRequests_KansasCity_2007-March2021.tsv`
+
+### **🔹 Data Attributes and Observations**
+| Column Name        | Data Type  | Unique Values | Null Count |
+|-------------------|------------|--------------|------------|
+| CASE ID          | V_String    | >10,000      | 0          |
+| SOURCE          | V_String    | 21           | 67         |
+| DEPARTMENT      | V_String    | 27           | 0          |
+| WORK GROUP      | V_String    | 146          | 0          |
+| TYPE            | V_String    | 295          | 0          |
+| DETAIL          | V_String    | 574          | 0          |
+| CREATION DATE   | V_String    | 5229         | 0          |
+| STATUS         | V_String    | 6            | 0          |
+| CLOSED DATE    | V_String    | 4995         | 12702      |
+| DAYS TO CLOSE  | V_String    | 2748         | 26515      |
+| ZIP CODE       | V_String    | 65           | 826        |
+| CATEGORY1      | V_String    | 82           | 0          |
+
+
 ## Business Questions & SQL Queries
 
 ### Service Requests Over Time
