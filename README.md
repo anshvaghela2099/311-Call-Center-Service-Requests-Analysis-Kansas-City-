@@ -111,7 +111,7 @@ The following Power BI dashboards provide insights into **Kansas City Call Cente
 
 ---
 
- **These dashboards provide data-driven insights to optimize resource allocation and improve service efficiency in Kansas City’s Call Center Operations.** 🚀
+ **These dashboards provide data-driven insights to optimize resource allocation and improve service efficiency in Kansas City’s Call Center Operations.**
 
 
 ## Business Questions & SQL Queries
@@ -204,3 +204,9 @@ SELECT DEPARTMENT, COUNT(*) AS Service_Request_Count, AVG(DAYS_TO_CLOSE) AS AvgD
 FROM Kansas_City
 GROUP BY DEPARTMENT;
 ```
+
+---
+
+## **Author**
+**Ansh Vaghela**  
+[LinkedIn](https://www.linkedin.com/in/anshv1/)  
