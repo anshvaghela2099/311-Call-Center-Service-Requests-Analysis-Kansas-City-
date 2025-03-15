@@ -51,7 +51,7 @@ This project involves **analyzing 311 Call Center Service Requests** in **Kansas
 ### Service Requests Over Time
 **What is the trend in service requests from 2018-2021?**
 
-sql
+```sql
 SELECT YEAR(Creation_Date) AS Year, COUNT(*) AS Service_Request_Count
 FROM Kansas_City
 WHERE YEAR(Creation_Date) BETWEEN 2018 AND 2021
@@ -61,7 +61,7 @@ ORDER BY Year;
 ### Service Requests Over Time
 **What is the trend in service requests from 2018-2021?**
 
-sql
+```sql
 SELECT YEAR(Creation_Date) AS Year, COUNT(*) AS Service_Request_Count
 FROM Kansas_City
 WHERE YEAR(Creation_Date) BETWEEN 2018 AND 2021
