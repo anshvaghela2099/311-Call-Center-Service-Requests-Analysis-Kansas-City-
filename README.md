@@ -69,3 +69,70 @@ GROUP BY SOURCE
 ORDER BY Service_Request_Count DESC;
 ```
 
+### Volume of Service Requests by Department
+**How are service requests distributed among departments?**
+
+```sql
+SELECT DEPARTMENT, COUNT(*) AS Service_Request_Count
+FROM Kansas_City
+GROUP BY DEPARTMENT
+ORDER BY Service_Request_Count DESC;
+```
+
+### Geographical Analysis (Top 10 Areas)
+**Which ZIP codes had the highest number of service requests?**
+
+```sql
+SELECT TOP 10 ZIP_CODE, COUNT(*) AS RequestCount
+FROM Kansas_City
+GROUP BY ZIP_CODE
+ORDER BY RequestCount DESC;
+```
+
+### Departmental Workload Comparison
+**How does workload vary among departments and work groups?**
+
+```sql
+SELECT DEPARTMENT, WORK_GROUP, COUNT(*) AS Service_Request_Count
+FROM Kansas_City
+GROUP BY DEPARTMENT, WORK_GROUP;
+```
+
+### Response Time Analysis
+**How does response time vary across departments?**
+
+```sql
+SELECT DEPARTMENT, AVG(DAYS_TO_CLOSE) AS AvgDaysToClose
+FROM Kansas_City
+GROUP BY DEPARTMENT
+ORDER BY AvgDaysToClose DESC;
+```
+
+### Service Request Status Composition
+**How has the status of service requests changed from 2018-2021?**
+
+```sql
+SELECT YEAR(Creation_Date) AS Year, STATUS, COUNT(*) AS RequestCount
+FROM Kansas_City
+WHERE YEAR(Creation_Date) BETWEEN 2018 AND 2021
+GROUP BY YEAR(Creation_Date), STATUS;
+```
+
+### Time to Closure Analysis
+**Which categories take the longest to close? (Top 10)**
+
+```sql
+SELECT TOP 10 CATEGORY1, AVG(DAYS_TO_CLOSE) AS AvgDaysToClose
+FROM Kansas_City
+GROUP BY CATEGORY1
+ORDER BY AvgDaysToClose DESC;
+```
+
+###  Workload Efficiency
+**How does workload (requests count) relate to closure efficiency?**
+
+```sql
+SELECT DEPARTMENT, COUNT(*) AS Service_Request_Count, AVG(DAYS_TO_CLOSE) AS AvgDaysToClose
+FROM Kansas_City
+GROUP BY DEPARTMENT;
+```
