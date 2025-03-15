@@ -73,7 +73,7 @@ The following Power BI dashboards provide insights into **Kansas City Call Cente
 ---
 
 ### **Service Requests Overview**
-![Service Requests Overview](images/service_requests_overview.png)
+![image](https://github.com/user-attachments/assets/bafff318-53b3-4392-97be-c952d0774e75)
 
 #### **Key Insights:**
 - **Service Request Trend:** Shows the number of requests over the years.
@@ -84,7 +84,8 @@ The following Power BI dashboards provide insights into **Kansas City Call Cente
 ---
 
 ### **Geographical & Workload Distribution**
-![Geographical & Workload](images/geographical_workload.png)
+![image](https://github.com/user-attachments/assets/a6132341-8071-489f-89d1-9bede244f5bb)
+
 
 #### **Key Insights:**
 - **Service Request by Area (Top 10):** Identifies the locations with the highest request volume.
@@ -95,7 +96,8 @@ The following Power BI dashboards provide insights into **Kansas City Call Cente
 ---
 
 ### **Response Time & Efficiency Analysis**
-![Response Time & Efficiency](images/response_time_efficiency.png)
+![image](https://github.com/user-attachments/assets/4e22c21e-b373-4659-a7e5-b99f3c02169d)
+
 
 #### **Key Insights:**
 - **Average Response Time by Category (Top 10):** Identifies categories with the longest response times.
@@ -105,8 +107,7 @@ The following Power BI dashboards provide insights into **Kansas City Call Cente
 ---
 
 ## Publishing Dashboards
-- **📌 Power BI:** Published to **Power BI Workspace** for interactive reporting.
-- **📌 Tableau:** Uploaded to **Tableau Cloud** for accessibility and analysis.
+- **Power BI:** Published to **Power BI Workspace** for interactive reporting. https://app.powerbi.com/groups/me/reports/24ac33dc-af86-4969-ad76-c98460b60c9f/ReportSection?experience=power-bi
 
 ---
 
