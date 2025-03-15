@@ -57,13 +57,15 @@ FROM Kansas_City
 WHERE YEAR(Creation_Date) BETWEEN 2018 AND 2021
 GROUP BY YEAR(Creation_Date)
 ORDER BY Year;
+```
 
-### Service Requests Over Time
-**What is the trend in service requests from 2018-2021?**
+### Volume of Service Requests by Source
+**Which sources generate the most service requests?**
 
 ```sql
-SELECT YEAR(Creation_Date) AS Year, COUNT(*) AS Service_Request_Count
+SELECT SOURCE, COUNT(*) AS Service_Request_Count
 FROM Kansas_City
-WHERE YEAR(Creation_Date) BETWEEN 2018 AND 2021
-GROUP BY YEAR(Creation_Date)
-ORDER BY Year;
+GROUP BY SOURCE
+ORDER BY Service_Request_Count DESC;
+```
+
