@@ -50,7 +50,7 @@ This project involves **analyzing 311 Call Center Service Requests** in **Kansas
 
 **Dataset:** `311_CallCenterServiceRequests_KansasCity_2007-March2021.tsv`
 
-### **🔹 Data Attributes and Observations**
+### ** Data Attributes and Observations**
 | Column Name        | Data Type  | Unique Values | Null Count |
 |-------------------|------------|--------------|------------|
 | CASE ID          | V_String    | >10,000      | 0          |
@@ -65,6 +65,52 @@ This project involves **analyzing 311 Call Center Service Requests** in **Kansas
 | DAYS TO CLOSE  | V_String    | 2748         | 26515      |
 | ZIP CODE       | V_String    | 65           | 826        |
 | CATEGORY1      | V_String    | 82           | 0          |
+
+## Visualizations & Dashboards
+
+The following Power BI dashboards provide insights into **Kansas City Call Center Service Requests**. The visualizations analyze trends, workload distribution, response times, and efficiency.
+
+---
+
+### **Service Requests Overview**
+![Service Requests Overview](images/service_requests_overview.png)
+
+#### **Key Insights:**
+- **Service Request Trend:** Shows the number of requests over the years.
+- **Yearly Service Request Trend (Department Wise):** Tracks department-specific trends.
+- **Service Request by Source:** Highlights major request channels (Phone, Web, Email, etc.).
+- **Service Request by Departments:** Displays the distribution of requests across different departments.
+
+---
+
+### **Geographical & Workload Distribution**
+![Geographical & Workload](images/geographical_workload.png)
+
+#### **Key Insights:**
+- **Service Request by Area (Top 10):** Identifies the locations with the highest request volume.
+- **Service Request (Department and Work Group Wise):** Compares workload among various departments and work groups.
+- **Average Response Time by Department:** Displays response time differences across departments.
+- **Service Request by Year and Status:** Shows trends of open, closed, and resolved requests over time.
+
+---
+
+### **Response Time & Efficiency Analysis**
+![Response Time & Efficiency](images/response_time_efficiency.png)
+
+#### **Key Insights:**
+- **Average Response Time by Category (Top 10):** Identifies categories with the longest response times.
+- **Top 10 Performance Metrics:** Highlights cases with the fastest response times.
+- **Workload Efficiency:** Examines the relationship between workload volume and efficiency in closing requests.
+
+---
+
+## Publishing Dashboards
+- **📌 Power BI:** Published to **Power BI Workspace** for interactive reporting.
+- **📌 Tableau:** Uploaded to **Tableau Cloud** for accessibility and analysis.
+
+---
+
+ **These dashboards provide data-driven insights to optimize resource allocation and improve service efficiency in Kansas City’s Call Center Operations.** 🚀
 
 
 ## Business Questions & SQL Queries
